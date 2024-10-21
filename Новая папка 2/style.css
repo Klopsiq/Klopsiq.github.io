@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+}
+
+.header h1 {
+    color: #007bff;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.experience, .about, .skills {
+    margin-top: 30px;
+}
+
+h2 {
+    color: #007bff;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+}
+
+.about p {
+    font-size: 1.1em;
+    color: #444;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.skills li {
+    text-align: center;
+    padding: 15px;
+    background: #e9f5ff;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+}

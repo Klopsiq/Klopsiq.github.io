@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Aydar Shumbalov</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleLanguage() {
+            const elements = document.querySelectorAll('[data-en], [data-ru]');
+            const lang = document.documentElement.lang === 'en' ? 'ru' : 'en';
+            document.documentElement.lang = lang;
+
+            elements.forEach(element => {
+                if (lang === 'en') {
+                    element.innerHTML = element.getAttribute('data-en');
+                } else {
+                    element.innerHTML = element.getAttribute('data-ru');
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <button onclick="toggleLanguage()">Toggle Language</button>
+        <header class="header">
+            <h1 data-en="Aydar Shumbalov" data-ru="Айдар Шумбалов">Aydar Shumbalov</h1>
+            <p data-en="First-year Student, HSE St. Petersburg<br>Major: Applied Analysis and Artificial Intelligence" data-ru="Первокурсник, ВШЭ Санкт-Петербург<br>Направление: Прикладной анализ и искусственный интеллект">First-year Student, HSE St. Petersburg<br>Major: Applied Analysis and Artificial Intelligence</p>
+        </header>
+
+        <section class="experience">
+            <h2 data-en="Experience" data-ru="Опыт работы">Experience</h2>
+            <ul>
+                <li data-en="Developed a custom Chat GPT configuration for generating resume websites." data-ru="Разработал собственную конфигурацию Chat GPT для создания сайтов-резюме.">Developed a custom Chat GPT configuration for generating resume websites.</li>
+                <li data-en="Developed a custom Chat GPT configuration for solving C++ lab assignments." data-ru="Разработал собственную конфигурацию Chat GPT для решения лабораторных работ по C++.">Developed a custom Chat GPT configuration for solving C++ lab assignments.</li>
+                <li data-en="Experienced in extracting information from PDF documents." data-ru="Опыт извлечения информации из PDF документов.">Experienced in extracting information from PDF documents.</li>
+                <li data-en="Participated in UI/UX development projects." data-ru="Участвовал в проектах по разработке UI/UX.">Participated in UI/UX development projects.</li>
+            </ul>
+        </section>
+
+        <section class="about">
+            <h2 data-en="About Me" data-ru="Обо мне">About Me</h2>
+            <p data-en="I am a passionate student with a strong interest in artificial intelligence and data analysis. I enjoy solving challenging problems and building practical solutions that can improve everyday life. My skills include programming in C++, Python, and using machine learning tools. I am excited to learn and collaborate on innovative projects." data-ru="Я увлеченный студент, проявляющий большой интерес к искусственному интеллекту и анализу данных. Мне нравится решать сложные задачи и создавать практические решения, которые могут улучшить повседневную жизнь. Мои навыки включают программирование на C++, Python и использование инструментов машинного обучения. Я рад учиться и сотрудничать в рамках инновационных проектов.">I am a passionate student with a strong interest in artificial intelligence and data analysis. I enjoy solving challenging problems and building practical solutions that can improve everyday life. My skills include programming in C++, Python, and using machine learning tools. I am excited to learn and collaborate on innovative projects.</p>
+        </section>
+
+        <section class="skills">
+            <h2 data-en="Skills" data-ru="Навыки">Skills</h2>
+            <ul>
+                <li data-en="Programming Languages: C++, Python, JavaScript" data-ru="Языки программирования: C++, Python, JavaScript">Programming Languages: C++, Python, JavaScript</li>
+                <li data-en="Artificial Intelligence and Machine Learning" data-ru="Искусственный интеллект и машинное обучение">Artificial Intelligence and Machine Learning</li>
+                <li data-en="Data Analysis and Visualization" data-ru="Анализ данных и визуализация">Data Analysis and Visualization</li>
+                <li data-en="UI/UX Design Principles" data-ru="Принципы дизайна UI/UX">UI/UX Design Principles</li>
+                <li data-en="Problem Solving and Critical Thinking" data-ru="Решение проблем и критическое мышление">Problem Solving and Critical Thinking</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
